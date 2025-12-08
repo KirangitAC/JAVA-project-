@@ -1,0 +1,24 @@
+class UserInfo {
+
+ 
+    public void showDetails(String userName, double marks) {
+        System.out.println("User Name: " + userName + ", Marks: " + marks);
+    }
+
+ 
+    public void showDetails(boolean activeStatus, char grade) {
+        System.out.println("Active: " + activeStatus + ", Grade: " + grade);
+    }
+
+    public static void main(String[] args) {
+
+        UserInfo info = new UserInfo();
+
+        
+        info.showDetails("Kiran", 89.5);
+
+       
+        info.showDetails(true, 'A');
+    }
+}
+
