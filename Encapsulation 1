@@ -1,0 +1,58 @@
+class Employee {
+
+    private int id;
+    private double salary;
+    private String designation;
+    private String name;  
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public String getDesignation() {
+        return designation;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Employee e = new Employee();
+
+       
+        e.setId(2025);
+        e.setSalary(85000);
+        e.setDesignation("Senior Cloud Engineer");
+        e.setName("KIRAN ");
+
+      
+        System.out.println("Employee ID: " + e.getId());
+        System.out.println("Employee Name: " + e.getName());
+        System.out.println("Employee Salary: " + e.getSalary());
+        System.out.println("Employee Designation: " + e.getDesignation());
+    }
+}
